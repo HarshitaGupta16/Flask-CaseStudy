@@ -1,0 +1,28 @@
+{% extends "home.html" %}
+{% block content %}
+<div class="row">
+
+    <div class="col-md-12 text-center">
+        <div class="content">
+        <form name="up" method="POST" action="updatecustomer">
+        <dl>
+            
+            <dd>Customer SSN ID: {{ u.SSN_ID}}</dd>
+            <dd>Customer ID: {{u.CustomerID}}</dd>
+            <dd>Old Customer Name: {{u.Name}}</dd>
+            <dd>New Customer Name:<input type="text" class="input-area" name="name"></dd>
+            <dd>Old Address:{{u.Address}}</dd>
+            <dd>New Customer Address:<input type="text" class="input-area" name="add"></dd>
+            <dd>Old Age:{{u.Age}}</dd>
+            <dd>New Age:<input type="number" class="input-area" name="age"></dd>
+            <dd><input type="submit" value="submit"></dd>
+            
+        </dl>
+        </form>
+       </div>
+            
+
+    </div>
+    
+</div>
+{% endblock %}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>RETAIL BANK MANAGEMENT</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		
+
+<link rel="stylesheet" href="static/styles/style1.css"/>
+<link rel="stylesheet" href="static/styles/new.css"/>
+
+</head>
+  <body>
+    <!--<div class="header">
+      <h1>RETAIL BANK MANAGEMENT </h1>
+      <p>ONLINE BANKING SYSTEM</p>-->
+
+    </div>
+    <div class="container">
+      {% include "includes/nav.html" %}
+  
+      {% if session['username'] %}
+      <span class="user"><h1>Welcome, {{ session['username'] }}</h1></span>
+      {% endif %}
+      {% include "includes/_message.html" %}
+      
+	  {% block content %}
+	  <div style="text-align:left;">
+		<h2>Online Banking for you</h2> 
+        <p>Online banking allows a user to conduct financial transactions via the Internet. Online banking is also known as Internet banking or web banking.</p>
+
+		<p>Online banking requires a computer or other device, an Internet connection, and a bank or debit card. In order to access the service, clients need to register for their bank's online banking service. In order to register, they need to create a password. Once that's done, they can use the service to do all their banking.
+
+			Banking transactions offered online vary by the institution. Most banks generally offer basic services such as transfers and bill payments. Some banks also allow customers to open up new accounts and apply for credit cards through online banking portals. Other functions may include ordering checks, putting stop payments on checks, or reporting a change of address.
+			
+			Checks can now be deposited online through a mobile app. The customer simply enters the amount before taking a photo of the front and back of the check to complete the deposit.
+			
+			Online banking does not permit the purchase of traveler's checks, bank drafts, certain wire transfers, or the completion of certain credit applications like mortgages. These transactions still need to take place face-to-face with a bank representative.
+			
+			</p>
+		<p>With online banking, consumers aren't required to visit a bank branch to complete most of their basic banking transactions. They can do all of this at their own convenience, wherever they want—at home, at work, or on the go.</p>
+
+
+
+		<p>Online banking, also known as internet banking or web banking, is an electronic payment system that enables customers of a bank or other financial institution to conduct a range of financial transactions through the financial institution's website. The online banking system will typically connect to or be part of the core banking system operated by a bank and is in contrast to branch banking which was the traditional way customers accessed banking services.
+
+			Some banks operate as a "direct bank" (or “virtual bank”), where they rely completely on internet banking.
+			
+			Internet banking software provides personal and corporate banking services offering features such as viewing account balances, obtaining statements, checking recent transactions, transferring money between accounts, and making payments.</p>
+    </div>
+
+      {% endblock %}
+      
+  
+  </div>
+
+{% include "includes/footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+{% extends "home.html" %}
+{% block content %}
+{% if c %}
+<form name="deposit" action="depositmoney" method="POST">
+<dl>
+            
+                    
+    <dd>Customer ID: {{c.CustomerID}}</dd>
+    <dd>Account ID: {{ c.AccountID}}</dd>
+    <dd>Account Type: {{c.AccountType}}</dd>
+
+    
+    
+    
+    <dd>Balance:{{c.Balance}}</dd>  
+    <dd>Deposite Amount:<input type="number" name="d1" placeholder="Enter Amount"></dd>
+    <dd><input type="submit" value="Submit"></dd>         
+</dl>
+</form>
+{%endif%}
+{% if not c %}
+<div id="center">
+		<div class="login">
+			
+			<div class="content">
+				<form action="" method="POST">
+					<div class="cont">
+					<p>Enter Account ID   <input type="text" class="input-area" placeholder="Account ID" name="AccID"></p>
+					
+					</div><br><br>
+					
+				<input type="submit" class="primary" value="Search">
+				</form>
+			</div>
+		</div>
+    </div>
+{% endif %}
+{% endblock %}

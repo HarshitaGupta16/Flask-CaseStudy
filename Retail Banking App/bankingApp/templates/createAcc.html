@@ -1,0 +1,219 @@
+
+<html>
+<head>
+<title>Home</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+ body
+{
+	padding: 0px;
+	margin:0px;
+background:#ccc;
+	} 
+	.nav-bar{
+		display: flex;
+		padding: 40px 120px;
+	}
+	.nav-logo
+	{
+		width: 245px;
+	}
+	.nav-links
+	{
+		flex:1;
+	}
+	.nav-links ul{
+		margin-left: 50px;
+		display: inline;
+	}
+	.nav-links ul li
+	{
+		list-style: none;
+		display: inline-block;
+		padding: 8px 20px;
+	}
+	.nav-links ul a{
+		color: black;
+		text-decoration: none;
+		font-size: 18px;
+	}
+	.nav-links ul li::after{
+		content: '';
+		width: 0px;
+		height: 2px;
+		background: yellow;
+		display: block;
+		margin: auto;
+		transition: .5s;
+	}
+	.nav-links ul li:hover::after{
+		width: 100%;
+	}
+	.vertical-bar
+	{
+		height: 100%;
+		background: #000;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+	.search-icon{
+		height: 60%;
+		width: 80px;
+	}
+	.search-icon .fa{
+		margin: 45px 23px;
+		display: block;
+		color: #fff;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	.social-icons{
+		height: 35%;
+		width:80px;
+		background: yellow;
+		text-align: center;
+		padding-top: 27%;
+		bottom:0;
+		position: absolute;
+	}
+	.social-icons .fa{
+		margin: 15px 23px;
+		display: block;
+		padding: 8px;
+		border:1px solid #000;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	.notification{
+		display: flex;
+		width: 500px;
+		right: 0;
+		bottom: 0;
+		border-radius: 2px solid;
+		position: absolute;
+		background: yellow;
+		align-items: center;
+	}
+	.About
+	{
+		flex-basis:50%;
+		padding: 10px;
+	}
+	.services
+	{
+		flex-basis:50%;
+	}
+	.main
+	{
+		width:420px;
+		height:500px;
+		top:30%;
+		left:30%;	
+		position: absolute;
+		transform:translate(-50%,- 50%);
+		box-sizing:border-box;
+		padding: 20px 90px;
+	}
+	.main h1{
+		margin: 0;
+		padding: 0 0 20px;
+		text-align: center;
+		font-size: 22px;
+	}
+	.main form 
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+	}
+	.main input{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.main input[type="text"], input[type="password"], input[type="select"]{
+		border: none;
+		border-bottom: 1px solid #fff;
+		background: transparent;
+		outline: none;
+		height: 40px;
+	}
+	.main input[type="submit"]
+	{
+		border: none;
+		outline: none;
+		height: 40px;
+		background: #fb2525;
+		color: #fff;
+		font-size: 18px;
+		border-radius: 20px;
+	}
+	.main input[type="submit"]:hover
+	{
+		cursor: pointer;
+		background: #ffc107;
+		color:#000;
+	}
+</style>
+</head>
+<body>
+	<div class="hero">
+	<div class="nav-bar">
+		<div class="nav-logo">
+			<h1><span style="color:yellow">FedChoice</span>Bank<h1>
+		</div>
+    	<div class="nav-links">
+	  		<ul>
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>Customer Management</li></a>
+			<a href="#"><li>Account Management</li></a>
+			<a href="#"><li>Status Details</li></a>
+			<a href="#"><li>Account Operations</li></a>
+			<a href="#"><li>Logout</li></a>
+			</ul>
+			<div class="main">
+			
+				<h1>Create Account</h1>
+					<form>
+						<h4>Customer ID *: <input type="text" name="CUSTOMER ID" required><br></h4>
+                        <h4>ACCOUNT TYPE*: <select id = "ACCOUNT TYPE" <input type="text" name="ACCOUNT TYPE" required>
+                        <option value = "1">one</option>
+                        <option value = "2">two</option>
+                        <option value = "3">three</option>
+                        <option value = "4">four</option>
+                        </select></h4>
+						<h4>DEPOSIT AMOUNT *: <input type="text" name="DEPOSIT AMOUNT"required><br></h4>
+                        <h3 style="color:red">(*)FIELDS COMPULSORY</h3>
+                        <input type="SUBMIT" name="SUBMIT">
+             
+                   <form>
+            </div>
+		</div>
+
+	</div>
+		<div class="vertical-bar">
+			<div class="search-icon">
+				<i class="fa fa-th-list"></i>
+				<i class="fa fa-search"></i>
+			</div>
+			<div class="social-icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-google"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-youtube"></i>
+			</div>
+		</div>
+		<div class="notification">
+			<div class="About us">
+			<h3>About us</h3>
+<small>FedChoice Bank was founded on 14th June 2016 with the objective of providing with the detail services based on Retail Banking operations. The retail Internet Banking of FedChoice Bank offer a plethora of products and services</small></div>
+			<div class="services">
+				<h3>Services</h3>
+<small>Retail and Consumer Banking<br> Personal Internet Banking<br> Corporate Internet Banking <br>Debit and Credit Cards.</small><div>
+
+	</div>
+
+</body>
+	</html>

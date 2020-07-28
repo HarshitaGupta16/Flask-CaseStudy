@@ -1,0 +1,43 @@
+{% extends "home.html" %}
+{% block content %}
+<h1>Customer Status</h1>
+        
+            <table style="border:2px solid black;margin-left:auto;margin-right:auto;padding:2px;border-spacing:20px 50px; ">
+                
+                
+                <tr>
+                    <th >Customer ID</th>
+                    <th >Customer SSN ID</th>
+                    <th >Status</th>
+                    <th >Message</th>
+                    <th >Last Updated</th>
+                    <th >Operations</th>
+                    <th >View Profile</th>
+                    
+                </tr>
+                
+                
+    
+                <!-- All Customer Details -->
+                {% for i in d %}
+                <tr>
+                    <td >{{ i.CustomerID }}</td>
+                    <td>{{ i.SSN_ID }}</td>
+                    <td>{{ i.Status}}</td>
+                    <td>{{ i.Message }}</td>
+                    <td>{{ i.Last_Updated }}</td>
+                    <td><a href="">Refresh</a></td>
+                    <td><a href="">View Profile</a></td>
+                
+                </tr>
+                {% endfor %}
+                
+                
+            </table>
+        
+ 
+        
+    
+            
+{% endblock %}
+    

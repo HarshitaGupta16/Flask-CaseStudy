@@ -1,0 +1,27 @@
+{% extends "home.html" %}
+{% block content %}
+<h1>Search Result</h1>
+        
+                
+                
+    
+                <!-- All Customer Details using SSNID -->
+                
+                <dl>
+            
+                    
+                    <dd>Customer ID: {{c.CustomerID}}</dd>
+                    <dd>Account ID: {{ c.AccountID}}</dd>
+                    <dd>Account Type: {{c.AccountType}}</dd>
+                
+                    <dd>Status:{{c.AccStatus}}</dd>
+                    
+                    <dd>Last Updated:{{c.Last_Updated}}</dd>
+                    <dd>Balance:{{c.Balance}}</dd>  
+                    <dd>CRDate:{{c.CRDate}}</dd>         
+                </dl>
+                <!-- All Customer Details using CustomerID -->
+                
+            
+{% endblock %}
+    

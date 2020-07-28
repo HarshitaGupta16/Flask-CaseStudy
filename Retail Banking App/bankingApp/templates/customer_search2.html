@@ -1,0 +1,26 @@
+{% extends "home.html" %}
+{% block content %}
+<h1>Search Result</h1>
+        
+                
+                
+    
+                <!-- All Customer Details using SSNID -->
+                
+                <dl>
+            
+                    <dd>Customer SSN ID: {{ c.SSN_ID}}</dd>
+                    <dd>Customer ID: {{c.CustomerID}}</dd>
+                    <dd>Customer Name: {{c.Name}}</dd>
+                
+                    <dd>Address:{{c.Address}}</dd>
+                    
+                    <dd>Age:{{c.Age}}</dd>
+                    <dd>State:{{c.State}}</dd>  
+                    <dd>City:{{c.City}}</dd>         
+                </dl>
+                <!-- All Customer Details using CustomerID -->
+                
+            
+{% endblock %}
+    

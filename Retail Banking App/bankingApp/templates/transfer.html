@@ -1,0 +1,60 @@
+
+	{% extends "home.html" %}
+	{% block content %}
+	{% if B1 %}
+	<h1>Amount Before Transaction in Source Account:{{B1}}</h1>
+	<h1>Amount After Transaction in Source Account:{{B2}}</h1>
+	<h1>Amount Before Transaction in Target Account:{{B3}}</h1>
+	<h1>Amount After Transaction in Target Account:{{B4}}</h1>
+	{% endif %}
+	{% if not B1 %}
+    <div class="nav-logo">
+		<h1><span style="color:yellow">FedChoice</span>Bank<h1>
+	</div>
+	<div class="hero">
+	<div class="nav-bar">
+		
+
+    		<div class="main">
+			<h1>Transfer Money Screen</h1>
+			
+					<form name="transfer" action="" method="POST">
+						<div class="form-group">
+						<label>Source Account ID *:</label> 
+						<input type="text" name="SOURCEID"  required><br><br>
+						</div>
+						<div class="form-group">
+						<label>Source Account type *:</label> 
+						<select name="type1">
+                            <option value="Saving Account">Saving Account</option>
+                            <option value="Current Account">Current Account</option>
+                        </select><br><br>
+                        <div class="form-group">
+                            <label>Target Account ID *:</label> 
+                            <input type="text" name="TARGETID"  required><br><br>
+                            </div>
+                        <label>Target Account type *:</label> 
+						<select name="type2">
+                            <option value="Saving Account">Saving Account</option>
+                            <option value="Current Account">Current Account</option>
+						</select><br><br>
+						</div>
+						<div class="form-group">
+                        <label>Transfer Amount *:</label> 
+                        <input type="number" name="amount" required><br><br>
+                        </div>
+             
+
+						<div class="form-group">
+                        <h3 style="color:red">(*) Fields are compulsory</h3>
+						<input type="submit" name="" value="Transfer">
+						<input type="reset" name="" value="Reset">
+                        </div>
+					</form>
+				</div>
+		</div>
+
+                    
+	</div>
+	{% endif %}
+	{% endblock %}

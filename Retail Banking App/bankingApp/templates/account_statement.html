@@ -1,0 +1,23 @@
+{% extends "home.html" %}
+{% block content %}
+
+<div id="center">
+		<div class="login">
+			
+			<div class="content">
+				<form action="accountstatement" method="POST">
+					<div class="cont">
+					Account ID   <input type="text" class="input-area" placeholder="Account ID" name="AccID">
+					
+					</div>
+					<div class="cont">
+					
+				</div><br><br>
+				
+				
+				<input type="submit" class="primary" value="Get Statement"><br><br>
+				</form>
+			</div>
+		</div>
+	</div>
+	{% endblock %}

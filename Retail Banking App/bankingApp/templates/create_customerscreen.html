@@ -1,0 +1,81 @@
+
+	{% extends "home.html" %}
+	{% block content %}
+
+	
+	
+		<div class="nav-logo">
+			<h1><span style="color:yellow">FedChoice</span>Bank<h1>
+		</div>
+
+		<div class="container">
+			<h1>Create Customer Screen</h1>
+			
+					<form name="create" action="" method="POST">
+						<div class="row">
+							<div class="col-25">
+							<label>Customer SSN ID *:</label> 
+							</div>
+						    <div class="col-75">
+							<input type="text" name="CUSTOMER SSN ID" minlength="9" maxlength="9"required><br><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+							<label>CUSTOMER NAME *:</label> 
+							</div>
+							<div class="col-75">
+							<input type="text" name="CUSTOMER ID"required><br><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+							<label>AGE *:</label>
+							</div>
+							<div class="col-75"> 
+							<input type="number" name="AGE" required><br><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+							<label>ADDRESS *: </label>
+							</div>
+							<div class="col-75">
+							<input type="text" name="ADDRESS" required><br><br>
+							</div>
+                        </div>
+
+						<div class="row">
+							<div class="col-25">
+							<label>STATE *:</label>
+							</div>
+							<div class="col-75">
+                            <select id = "STATE" name="STATE" required>
+                            <option value = "Odisha">Odisha</option>
+                            <option value = "Maharastra">Maharastra</option>
+                            <option value = "Madhya pradesh">Madhya pradesh</option>
+                            <option value = "Telegana">Telegana</option>
+							</select>
+							</div>
+						</div><br><br>
+                        <div class="row">
+							<div class="col-25">
+							<label>CITY *</label>
+							</div>
+							<div class="col-75">
+                            <select id = "CITY"  name="CITY" required>
+                            <option value = "Hydrabad">Hydrabad</option>
+                            <option value = "Pune">Pune</option>
+                            <option value = "Chennai">Chennai</option>
+                            <option value = "Indore">Indore</option>
+							</select>
+							</div> 
+						</div><br><br>
+                        <div class="row">
+                        <h3 style="color:red">(*) Fields are compulsory</h3>
+						<input type="submit" name="" value="Submit">
+						<input type="reset" name="" value="Reset">
+                        </div><br><br>
+					</form>
+				</div>
+	{% endblock %}

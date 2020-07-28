@@ -1,0 +1,32 @@
+
+	{% extends "home.html" %}
+	{% block content %}
+    <div id="center">
+	<div class="hero">
+	<div class="nav-bar">
+		<div class="nav-logo">
+			<h1><span style="color:yellow">FedChoice</span>Bank<h1>
+		</div>
+
+    		<div class="main">
+			<h1>Update Customer Screen</h1>
+			
+					<form name="update"  method="POST" action="">
+						<label>Customer SSN ID *:</label> 
+						<input type="number" name="CUSTOMER SSN ID" required><br>
+						
+                        <h3 style="color:red">(*) Fields are compulsory</h3>
+						<input type="submit" name="" value="Submit">
+						<input type="reset" name="" value="Reset">
+                        
+					</form>
+				</div>
+		</div>
+
+                    
+    </div>
+    
+    
+    </div>
+    
+	{% endblock %}

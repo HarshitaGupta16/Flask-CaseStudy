@@ -1,0 +1,43 @@
+
+	{% extends "home.html" %}
+	{% block content %}
+    <div class="nav-logo">
+		<h1><span style="color:yellow">FedChoice</span>Bank<h1>
+	</div>
+	<div class="hero">
+	<div class="nav-bar">
+		
+
+    		<div class="main">
+			<h1>Create Account Screen</h1>
+			
+					<form name="createAcc" action="" method="POST">
+						<div class="form-group">
+						<label>Customer ID *:</label> 
+						<input type="text" name="CUSTOMER ID" minlength="9" maxlength="9" required><br><br>
+						</div>
+						<div class="form-group">
+						<label>Account type *:</label> 
+						<select name="type">
+                            <option value="Saving Account">Saving Account</option>
+                            <option value="Current Account">Current Account</option>
+						</select><br><br>
+						</div>
+						<div class="form-group">
+                        <label>Deposit Amount *:</label> 
+                        <input type="number" name="amount" required><br><br>
+                        </div>
+             
+
+						<div class="form-group">
+                        <h3 style="color:red">(*) Fields are compulsory</h3>
+						<input type="submit" name="" value="Submit">
+						<input type="reset" name="" value="Reset">
+                        </div>
+					</form>
+				</div>
+		</div>
+
+                    
+	</div>
+	{% endblock %}

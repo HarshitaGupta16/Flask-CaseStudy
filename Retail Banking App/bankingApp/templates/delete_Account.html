@@ -1,0 +1,39 @@
+
+	{% extends "home.html" %}
+	{% block content %}
+    <div id="center">
+	<div class="hero">
+	<div class="nav-bar">
+		<div class="nav-logo">
+			<h1><span style="color:yellow">FedChoice</span>Bank<h1>
+		</div>
+
+    		<div class="main">
+            <h1>Delete Account Screen</h1>
+            
+			
+					<form name="delete" action="" method="POST">
+						<label>Account ID *:</label> 
+                        <input type="text" name="CUSTOMERID" required><br><br>
+                        <label>Account type *:</label> 
+						<select name="type" required>
+                            <option value="Saving Account">Saving Account</option>
+                            <option value="Current Account">Current Account</option>
+                        </select><br><br>
+
+						
+                        <h3 style="color:red">(*) Fields are compulsory</h3>
+						<input type="submit" name="" value="Submit">
+						<input type="reset" name="" value="Reset">
+                        
+					</form>
+				</div>
+		</div>
+
+                    
+    </div>
+    
+    
+    </div>
+    
+	{% endblock %}
