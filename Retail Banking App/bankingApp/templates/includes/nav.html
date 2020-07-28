@@ -1,0 +1,65 @@
+    <header>
+        <nav>
+            <ul>
+                <li class="active"><a href="{{ url_for('auth.Home') }}" class="nav-link {% if Home %}active{% endif %}">Home</a></li>
+                {% if session['username']=="SB1234567" %}
+                <li><a href="javascript:void(0)">Customer Management</a>
+                  <div class="sub-container1">
+                    <ul>
+                      <li class="hover-me"><a href="{{ url_for('auth.create_customer') }}" class="nav-link {% if create_customer %}active{% endif %}">Create Customer</a>
+                      <li class="hover-me"><a href="{{ url_for('auth.update_customer2') }}" class="nav-link {% if update_customer2 %}active{% endif %}">Update Customer</a></li>
+                      <li class="hover-me"><a href="{{ url_for('auth.delete_customer') }}" class="nav-link {% if delete_customer %}active{% endif %}">Delete Customer</a></li>
+                      <li class="hover-me"><a href="{{ url_for('auth.search_customer2') }}" class="nav-link {% if search_customer2 %}active{% endif %}">Search Customer</a></li>
+                      
+                    </ul>
+                
+                  </div>
+                </li>
+                  <!--<div>
+                      <img src="https://res-3.cloudinary.com/frydenbogruppen/image/upload/c_crop,h_1928,w_5142,x_0,y_854/c_fill,h_720,w_1920/q_auto:best/iStock_000024481570_Double_fq0wlzcumq" alt="Italian Trulli">
+                  </div>-->
+                  <li><a href="javascript:void(0)">Account Management</a>
+                    <div class="sub-container1">
+                      <ul>
+                        <li class="hover-me"><a href="{{ url_for('auth.create_Account') }}" class="nav-link {% if create_Account %}active{% endif %}">Create Account</a></li>
+                        <li class="hover-me"><a href="{{ url_for('auth.delete_Account') }}" class="nav-link {% if delete_Account %}active{% endif %}">Delete Account</a></li>
+                        <li class="hover-me"><a href="{{ url_for('auth.search_account2') }}" class="nav-link {% if search_account2 %}active{% endif %}">Search Account</a></li>
+                        
+                      </ul>
+                  
+                    </div>
+                  </li>
+          
+                  <li><a href="javascript:void(0)">Status Details</a>
+                    <div class="sub-container1">
+                      <ul>
+                        <li class="hover-me"><a href="{{ url_for('auth.customer_status') }}" class="nav-link {% if customer_status %}active{% endif %}">Customer Status</a></li>
+                        <li class="hover-me"><a href="{{ url_for('auth.Account_Status') }}" class="nav-link {% if Account_Status %}active{% endif %}">Account Status</a></li>
+                        
+                        
+                      </ul>
+                  
+                    </div>
+                  </li>
+                  {% endif %}
+                  {% if session['username']=="CS1234567" %}
+                  <li><a href="javascript:void(0)">Account Operation</a>
+                    <div class="sub-container1">
+                      <ul>
+                        <li class="hover-me"><a href="{{ url_for('auth.depositmoney2') }}" class="nav-link {% if depositmoney2 %}active{% endif %}">Deposit Money</a></li>
+                        <li class="hover-me"><a href="{{ url_for('auth.withdrawlmoney2') }}" class="nav-link {% if withdrawlmoney2 %}active{% endif %}">Withdrawl Money</a></li>
+                        <li class="hover-me"><a href="{{ url_for('auth.transfermoney2') }}"  class="nav-link {% if transfermoney2 %}active{% endif %}">Transfer Money</a></li>
+                        
+                      </ul>
+                  
+                    </div>
+                  </li>
+
+                  <li class="hover-me"><a href="{{ url_for('auth.accountstatement2') }}"  class="nav-link {% if accountstatement2 %}active{% endif %}">Account Statement</a></li>
+        {% endif %}
+                
+                <li><a href="{{ url_for('auth.logout') }}" class="nav-link {% if logout %}active{% endif %}">Logout</a></li>
+              </ul>
+        </nav>
+        <hr style="clear:both">
+    </header>
