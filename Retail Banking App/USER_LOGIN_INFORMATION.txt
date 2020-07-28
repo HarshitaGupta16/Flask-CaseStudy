@@ -1,0 +1,10 @@
+For Bank Executive Login
+***************************************************
+USERNAME:SB1234567
+PASSWORD:12345678
+
+
+For Bank Cashier Login
+***************************************************
+USERNAME:CS1234567
+PASSWORD:87654321
